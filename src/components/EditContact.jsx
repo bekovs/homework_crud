@@ -25,8 +25,8 @@ const style = {
 export default function EditContact({ editModal, handleEditClose, editContact, handleSave }) {
 
   const [contact, setContact] = useState(editContact);
+  console.log(contact)
   console.log(editContact);
-  console.log(contact);
   
   // let [alert, setAlert] = useState(false);
   let alert = false;
@@ -102,7 +102,7 @@ export default function EditContact({ editModal, handleEditClose, editContact, h
             </FormControl>
             </Typography>
             <Box sx={{mt: 4, width: '100%', display: 'flex', justifyContent: 'space-between'}}>
-              <Button onClick={handleSave}>Save changes</Button>
+              <Button onClick={() => handleSave(contact)}>Save changes</Button>
               <Button color={'warning'} onClick={handleEditClose}>Close</Button>
             </Box>
           </Box>

@@ -50,7 +50,7 @@ function App() {
       <Navbar handleOpen={handleOpen} />
       <AddContact open={open} handleClose={handleClose} handleContact={handleContact}/>
       <ContactList contacts={contacts} handleDelete={handleDelete} handleEdit={handleEdit}/>
-      <EditContact editModal={editModal} handleEditClose={handleEditClose} editContact={editContact} handleSave={handleSave}/>
+      { editModal && <EditContact editModal={editModal} handleEditClose={handleEditClose} editContact={editContact} handleSave={handleSave}/> }
     </div>
   );
 }
