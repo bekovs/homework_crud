@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 3% auto;
+}
